@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Game Memory',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
     myPairs.shuffle();
 
     gridViewTiles = myPairs;
-    Future.delayed(const Duration(seconds: 5), () {
+    Future.delayed(const Duration(seconds: 10), () {
 // Here you can write your code
       setState(() {
         print("2 seconds done");
